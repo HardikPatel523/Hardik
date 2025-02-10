@@ -1,6 +1,6 @@
 #! C:\Users\hardi\OneDrive\Documents\GitHub\Hardik\MyVirtualEnvironment\Scripts\python.exe
 
-import numpy as np
+import numpy as np # type: ignore
 import time
 
 start_time = time.time()
