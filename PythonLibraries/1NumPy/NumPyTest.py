@@ -40,9 +40,9 @@ print("\n==============================")
 print("3. COMPARISON: PYTHON LIST vs NUMPY SPEED")
 print("==============================")
 
-size = 1_000_000
-py_list = list(range(size))
-np_arr = np.arange(size)
+size = 1_000_000     # create a number 1,000,000 (underscore is just for readability)
+py_list = list(range(size))   # create a Python list with 1 million numbers
+np_arr = np.arange(size)      # create a NumPy array with 1 million numbers
 
 # Python list time
 start = time.time()
@@ -63,7 +63,7 @@ print("\n==============================")
 print("4. ARRAY SHAPE & RESHAPE")
 print("==============================")
 
-arr = np.arange(1, 13)
+arr = np.arange(1, 13) # create a NumPy array from 1 to 12 (13 is excluded)
 print("Original:", arr)
 
 reshaped = arr.reshape((3,4))
@@ -114,9 +114,12 @@ print("==============================")
 
 data = np.array([50, 100, 150, 200, 250])
 
+# Standardize the data: subtract mean and divide by standard deviation
+# Standardization formula: (x - mean) / std
 scaled = (data - data.mean()) / data.std()
-print("Original:", data)
-print("Standardized:", scaled)
+
+print("Original:", data)          # print original values
+print("Standardized:", scaled)    # print standardized (scaled) values
 
 
 print("\n==============================")
@@ -125,10 +128,10 @@ print("==============================")
 
 matrix = np.array([[1,2,3], [4,5,6]])
 
-print("Array:", matrix)
-print("Shape:", matrix.shape)
-print("Dimensions (ndim):", matrix.ndim)
-print("Total elements:", matrix.size)
+print("Array:", matrix)                  # print the full array
+print("Shape:", matrix.shape)            # shows rows and columns (e.g., 2x3)
+print("Dimensions (ndim):", matrix.ndim) # number of dimensions (1D, 2D, 3D, etc.)
+print("Total elements:", matrix.size)    # total number of elements in the array
 
 
 print("\n==============================")
@@ -144,8 +147,3 @@ arr[0] = 99
 print("Original:", arr)
 print("View (changes reflect):", view)
 print("Copy (separate data):", copy)
-
-
-print("\n==============================")
-print("FINISHED! NumPy Demonstration Complete")
-print("==============================")
