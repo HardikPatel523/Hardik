@@ -1,4 +1,4 @@
-import os
+import os     # OS module lets Python interact with the operating system (create folders, paths, list files, etc.)
 from datetime import datetime
 import pandas as pd # type: ignore
 
@@ -23,7 +23,6 @@ def save_csv(df, name):
     path = os.path.join(run_folder, filename)
     df.to_csv(path, index=False)
     print(f"\nSaved CSV: {path}\n")
-
 
 
 # -------------------------------------------------------------------
